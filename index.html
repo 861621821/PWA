@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="manifest" href="manifest.json">
-  <script src="sw.js"></script>
 </head>
 <body>
   <h2>wpa</h2>
-  <script>
-    if (navigator.serviceWorker != null) {
-      navigator.serviceWorker.register('sw.js')
-      .then(function(registration) {
-        console.log('Registered events at scope: ', registration.scope);
-      });
-    }
-  </script>
 </body>
+
+<script>
+  if (navigator.serviceWorker != null) {
+    navigator.serviceWorker.register('sw.js')
+    .then(function(registartion){
+      console.log('支持sw:',registartion.scope)
+    })
+  }
+</script>
 </html>

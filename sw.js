@@ -6,7 +6,6 @@ var cacheList=[
   'main.css',
   '1.png'
 ]
-
 self.addEventListener('install',e =>{
   e.waitUntil(
     caches.open(cacheStorageKey)
